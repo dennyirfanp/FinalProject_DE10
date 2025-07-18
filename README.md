@@ -72,14 +72,10 @@ postgresql://neondb_owner:npg_xjLsAhE58WGI@ep-dark-frost-a1xm5slv-pooler.ap-sout
 
 ## 🐳 Jalankan dengan Docker
 
-### Build image custom (agar mendukung matplotlib & pandas):
-```bash
-docker build -t fashion-airflow . 
-```
 
 ### Jalankan dengan docker-compose
 ```bash
-docker-compose up -d
+`docker compose --profile airflow up -d`
 ```
 
 ## 📈 Metabase Setup (Opsional)
