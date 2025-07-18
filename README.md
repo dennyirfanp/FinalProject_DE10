@@ -4,15 +4,13 @@
 📦 Proyek ini adalah pipeline **ETL (Extract-Transform-Load)** harian menggunakan **Apache Airflow** untuk memproses data dari toko fashion Eropa. Pipeline ini memuat data CSV, membersihkan, mentransformasi, lalu menyimpannya ke PostgreSQL, dan akhirnya divisualisasikan menggunakan **Metabase**
 
 ## 🔗 Arsitektur
-
-```mermaid
 graph TD
     A[CSV Files] -->|Daily Ingestion| B[Airflow ETL DAG]
     B --> C[PostgreSQL (NeonDB)]
     C --> D[Analytics Table]
     D --> E[Airflow Analytics Task]
     D --> F[Metabase Dashboard]
-```
+
 
 ## 📁 Dataset
 
